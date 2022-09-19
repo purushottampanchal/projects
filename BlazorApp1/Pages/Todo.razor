@@ -1,0 +1,46 @@
+﻿@page "/todo"
+@using BlazorApp1.Data
+<h3>Todo @todos.Count(t => t.IsDone)</h3>
+
+
+
+<ul>
+        
+
+    @foreach(TodoItem t in todos)
+    {
+        <li>
+
+
+            <input type="checkbox" @bind="t.IsDone" />
+            <input type="text" @bind="t.Title" />
+
+        </li>
+    }
+
+    <input type="text" @bind="newTodo" />
+    <button class="btn btn-primary" @onclick="AddTodo">Add todo</button>
+
+
+</ul>
+
+
+@code {
+    public List<TodoItem> todos = new List<TodoItem>();
+
+    string newTodo =" ";
+    private void AddTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(newTodo))
+        {
+            todos.Add(
+                new TodoItem { 
+                       Title = newTodo 
+                   }
+            );
+            newTodo = "";
+        }
+
+    }
+
+}
