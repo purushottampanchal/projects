@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginPage", "LoginPage.csproj", "{65CAB335-9DF4-4F57-8802-433ACE727CD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Admin", "..\Admin\Admin.csproj", "{6E5313EC-44F5-40FE-9CC1-AC747EC990E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Admin", "..\Admin\Admin.csproj", "{6E5313EC-44F5-40FE-9CC1-AC747EC990E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

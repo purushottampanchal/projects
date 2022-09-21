@@ -11,5 +11,7 @@ namespace LoginPage.Data
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<MenuItem> MenuItems { get; set; }
+        public DbSet<OrderItem> Orders { get; set; }
     }
 }
