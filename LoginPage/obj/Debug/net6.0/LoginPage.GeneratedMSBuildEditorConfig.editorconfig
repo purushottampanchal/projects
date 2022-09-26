@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\purushottam_panchal\source\repos\LoginPage
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/purushottam_panchal/source/repos/LoginPage/Views/Home/DisplayError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEaXNwbGF5RXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/purushottam_panchal/source/repos/LoginPage/Views/Home/DisplayOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEaXNwbGF5T3JkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/purushottam_panchal/source/repos/LoginPage/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -33,6 +41,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/purushottam_panchal/source/repos/LoginPage/Views/Product/DisplaySingleProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEaXNwbGF5U2luZ2xlUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/purushottam_panchal/source/repos/LoginPage/Views/Product/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxPcmRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/purushottam_panchal/source/repos/LoginPage/Views/Shared/Error.cshtml]

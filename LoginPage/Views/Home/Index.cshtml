@@ -1,24 +1,48 @@
-﻿@model User
-
+﻿
 @{
+    int userID = 0;
+    string UserName = null;
     ViewData["Title"] = "Index";
     IEnumerable<MenuItem> MenuList = ViewData["MenuList"] as IEnumerable<MenuItem>;
+
+
+    //TempData["userName"];
+    userID = Convert.ToInt32( TempData["userId"]);
+    if(TempData["userName"] != null)
+    {
+        UserName = TempData["userName"].ToString();
+        ViewData["uid"] = TempData["userId"];
+    }
+
+    Console.Write("name -----------------------" + UserName);
+
 }
 
    
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mea+Culpa">
+
 <style>
 
-        .carousel-content {
-      position: absolute;
-      bottom: 50%;
-      left: 10%;
-      z-index: 20;
-      color: white;
-      text-shadow: 0 1px 2px rgba(0,0,0,.6);
-    }
+          .cover-content {
+            position: absolute;
+            bottom: 60%;
+            left: 10%;
+            z-index: 99;
+            font-family: Mea Culpa;
+        }
 
-    .hover-1 img {
+        .carousel-content {
+          position: absolute;
+          bottom: 50%;
+          left: 10%;
+          z-index: 20;
+          color: white;
+          text-shadow: 0 1px 2px rgba(0,0,0,.6);
+           }
+
+        .hover-1 img {
             width: 105% !important;
             position: absolute;
             top: 0;
@@ -99,17 +123,19 @@
 </style>
 
      <div class="carousel-content">
-    @if (Model!=null && !string.IsNullOrEmpty(Model.Name))
+    @if (!string.IsNullOrEmpty(UserName))
     {
        ViewData["Greeting1"] = "Welcome, ";
-       ViewData["Greeting2"] = @Model.Name ;
+       ViewData["Greeting2"] = UserName ;
     }
     else
     {
       ViewData["Greeting1"]= "Welcome to the";
       ViewData["Greeting2"] = "Hotel-Name";
     }
-</div>
+    </div>
+
+
 
 <div class="container">
     @if(MenuList == null)
@@ -126,8 +152,9 @@
                 @foreach(MenuItem m in MenuList)
                 {
                     <div class="col-4 mt-4">
-                        
-                        <a href="Product/DisplaySingleProduct/@m.Id">
+                   <a asp-action="DisplaySingleProduct"
+                    asp-route-id="@m.Id" asp-route-uid="@userID"
+                    asp-controller="Product">
 
                             <div class="hover-1 hover text-white rounded">
                                 <img src = "@m.ImgUrl" alt="@m.Name"/>

@@ -968,6 +968,23 @@
             "rid": "win"
           }
         }
+      },
+      "Admin/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.9",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9"
+        },
+        "compile": {
+          "bin/placeholder/Admin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Admin.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -2630,10 +2647,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Admin/1.0.0": {
+      "type": "project",
+      "path": "../Admin/Admin.csproj",
+      "msbuildProject": "../Admin/Admin.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Admin >= 1.0.0",
       "EfCore.SchemaCompare >= 6.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.9",
@@ -2666,7 +2689,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\purushottam_panchal\\source\\repos\\Admin\\Admin.csproj": {
+              "projectPath": "C:\\Users\\purushottam_panchal\\source\\repos\\Admin\\Admin.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

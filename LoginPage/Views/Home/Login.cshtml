@@ -28,6 +28,13 @@ onload="window.location='#heading';"
             </div>
         }
 
+        @if (ViewData["login-message"] != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @ViewData["login-message"]
+            </div>
+        }
+
         <form method="post" class="mt-5 mb-5" asp-action="Login">    
             <div class="mb-5 row">
 
