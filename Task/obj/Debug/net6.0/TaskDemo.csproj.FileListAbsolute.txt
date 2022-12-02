@@ -1,0 +1,15 @@
+C:\Users\purushottam_panchal\source\repos\Task\obj\Debug\net6.0\TaskDemo.csproj.AssemblyReference.cache
+C:\Users\purushottam_panchal\source\repos\Task\obj\Debug\net6.0\TaskDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\purushottam_panchal\source\repos\Task\obj\Debug\net6.0\TaskDemo.AssemblyInfoInputs.cache
+C:\Users\purushottam_panchal\source\repos\Task\obj\Debug\net6.0\TaskDemo.AssemblyInfo.cs
+C:\Users\purushottam_panchal\source\repos\Task\obj\Debug\net6.0\TaskDemo.csproj.CoreCompileInputs.cache
+C:\Users\purushottam_panchal\source\repos\Task\bin\Debug\net6.0\TaskDemo.exe
+C:\Users\purushottam_panchal\source\repos\Task\bin\Debug\net6.0\TaskDemo.deps.json
+C:\Users\purushottam_panchal\source\repos\Task\bin\Debug\net6.0\TaskDemo.runtimeconfig.json
+C:\Users\purushottam_panchal\source\repos\Task\bin\Debug\net6.0\TaskDemo.dll
+C:\Users\purushottam_panchal\source\repos\Task\bin\Debug\net6.0\TaskDemo.pdb
+C:\Users\purushottam_panchal\source\repos\Task\obj\Debug\net6.0\TaskDemo.dll
+C:\Users\purushottam_panchal\source\repos\Task\obj\Debug\net6.0\refint\TaskDemo.dll
+C:\Users\purushottam_panchal\source\repos\Task\obj\Debug\net6.0\TaskDemo.pdb
+C:\Users\purushottam_panchal\source\repos\Task\obj\Debug\net6.0\TaskDemo.genruntimeconfig.cache
+C:\Users\purushottam_panchal\source\repos\Task\obj\Debug\net6.0\ref\TaskDemo.dll

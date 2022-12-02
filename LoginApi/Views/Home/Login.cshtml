@@ -1,0 +1,115 @@
+﻿@using LoginApi.Controllers
+@using System.Text.Json
+
+@model LoginRequest;
+
+
+<style>
+
+    .wrapper {
+        max-width: 500px;
+        border-radius: 10px;
+        margin: 50px auto;
+        padding: 30px 40px;
+        background-color: rgb(0 0 0 / 80%) !important;
+    }
+
+    .login-headaing {
+        font-family: 'Kunstler Script';
+        font-size: 4.5rem;
+        font-weight: bold;
+        color: #400485;
+    }
+
+    .login-subheading {
+        font-family: sans-serif;
+    }
+
+    .input-field {
+        border-radius: 5px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border: 1px solid #400485;
+        Background: transparent;
+    }
+
+        .input-field input {
+            border: none;
+            width: 100%;
+            outline: none;
+            box-shadow: none;
+            width: 100%;
+            background-color: transparent;
+            padding: 0px 2px;
+                    color: #dbdbdb;
+
+        }
+
+        .input-field:hover {
+            color: #7b4ca0;
+            border: 1px solid #7b4ca0;
+        }
+
+    .submit-button {
+        width: 100%;
+        border: 2px solid #400485;
+        border-radius: 100px;
+        transition: border-radius 0.9s, background 0.3s;
+    }
+
+        .submit-button:hover {
+            width: 100%;
+            border: 2px solid #400485;
+            background-color: #400485;
+            border-radius: 1px;
+            color: white;
+        }
+
+    .far {
+        border-color: #400485;
+    }
+
+    body {
+        background-image: url("https://www.10wallpaper.com/wallpaper/1366x768/1908/2019_Purple_Abstract_4K_HD_Design_1366x768.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-primary" role="alert">
+        @TempData["msg"]
+    </div>
+}
+
+@using (Html.BeginForm(FormMethod.Post))
+{
+
+    <div class="wrapper bg-white">
+        <div class="h2 text-center login-headaing">Login</div>
+        <div class="h4 text-muted text-center pt-2 login-subheading">Enter your login details</div>
+        <form class="pt-3">
+            <div class="form-group py-2">
+                <div class="input-field">
+                    <span class="far fa-user p-2"></span>
+                    <input type="text" name="username" placeholder="Username" required class="" />
+                </div>
+            </div>
+            <div class="form-group py-1 pb-2">
+                <div class="input-field">
+                    <span class="fas fa-lock p-2"></span>
+                    <input type="password" name="password" placeholder="Password" required class="" />
+                </div>
+            </div>
+            <button asp-action="AttemptLogin" asp-controller="Login" class="btn submit-button btn-block text-center text-light my-3">Log in</button>
+        </form>
+    </div>
+
+}
+
